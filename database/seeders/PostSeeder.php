@@ -22,6 +22,7 @@ class PostSeeder extends Seeder
                 'title' => $post->title,
                 'body' => $post->body,
                 'category' => $post->category,
+                'views' => rand(0, 1000),
             ]);
         }
 

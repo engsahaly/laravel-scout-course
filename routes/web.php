@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/search', [SearchController::class, 'search'])->name('search');
+Route::get('/search', [SearchController::class, 'search'])->middleware('auth')->name('search');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
