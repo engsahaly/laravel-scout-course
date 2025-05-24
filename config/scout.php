@@ -116,10 +116,10 @@ return [
         'id' => env('ALGOLIA_APP_ID', ''),
         'secret' => env('ALGOLIA_SECRET', ''),
         'index-settings' => [
-            'posts' => [
-                'searchableAttributes' => ['title', 'category'],
-                // 'attributesForFaceting'=> ['filterOnly(email)'],
-            ],
+            // 'posts' => [
+            //     'searchableAttributes' => ['title', 'category'],
+            //     // 'attributesForFaceting'=> ['filterOnly(email)'],
+            // ],
         ],
     ],
 

@@ -13,11 +13,20 @@
                         <x-text-input id="query" class="block mt-1 w-full" type="text" name="query"
                             value="{{ request('query') }}" placeholder="Search..." />
 
-                        <select name="replica" class="block mt-3 w-full">
+                        {{-- Replicas in Algolia --}}
+                        {{-- <select name="replica" class="block mt-3 w-full">
                             <option value="">--</option>
                             <option value="posts_views_desc" @selected(request('replica') == 'posts_views_desc')>Views (highest first)</option>
                             <option value="posts_views_asc" @selected(request('replica') == 'posts_views_asc')>Views (lowest first)</option>
-                        </select>
+                        </select> --}}
+
+                        {{-- Facets in Algolia --}}
+                        {{-- <select name="facet" class="block mt-3 w-full">
+                            <option value="">--</option>
+                            <option value="Laravel" @selected(request('facet') == 'Laravel')>Laravel</option>
+                            <option value="JavaScript" @selected(request('facet') == 'JavaScript')>JavaScript</option>
+                            <option value="DevOps" @selected(request('facet') == 'DevOps')>DevOps</option>
+                        </select> --}}
 
                         <x-primary-button class="mt-3">Search</x-primary-button>
                     </form>
