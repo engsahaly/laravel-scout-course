@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Post;
+use App\Models\PostAndArticleModel;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
@@ -22,7 +23,12 @@ class SearchController extends Controller
             // ->paginate(5);
             
             
-            $results = Post::search($query)->within('articles_and_posts_aggregator')->paginate(5);
+            // $results = Post::search($query)->within('articles_and_posts_aggregator')->paginate(5);
+            // $results = PostAndArticleModel::search($query)->paginate(5);
+            
+            $results = Post::search($query)->paginate(5);
+            // $paginator = Post::search($query)->paginateRaw(5);
+            // $results = collect($paginator->items()['hits']);
 
             // $builder = Post::search($query);
 

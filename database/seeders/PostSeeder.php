@@ -21,7 +21,8 @@ class PostSeeder extends Seeder
             Post::create([
                 'title' => $post->title,
                 'body' => $post->body,
-                'category' => $post->category,
+                // 'category' => $post->category,
+                'category_id' => rand(1, 8),
                 'views' => rand(0, 1000),
             ]);
         }

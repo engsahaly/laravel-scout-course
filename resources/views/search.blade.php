@@ -38,9 +38,11 @@
                                     <div class="mt-3 bg-gray-100 p-2">
                                         <h4 class="text-indigo-700">
                                             {{ $result->title }}
-                                            <em class="text-red-600">({{ $result->views }})</em>
+                                            <em class="text-red-600">({{ $result->views }}) |
+                                                ({{ $result->category?->name }})
+                                            </em>
                                         </h4>
-                                        <p class="text-gray-600">{{ $result->body }}</p>
+                                        <p class="text-gray-600">{{ $result['body'] }}</p>
                                     </div>
                                 @endforeach
 
