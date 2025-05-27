@@ -8,10 +8,12 @@
     "require": {
         "php": "^8.2",
         "algolia/algoliasearch-client-php": "^4.19",
+        "http-interop/http-factory-guzzle": "^1.2",
         "laravel/breeze": "^2.3",
         "laravel/framework": "^12.0",
         "laravel/scout": "^10.15",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "meilisearch/meilisearch-php": "^1.14"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

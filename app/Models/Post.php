@@ -15,6 +15,7 @@ class Post extends Model
             // 'id' => $this->id,
             'title' => $this->title,
             'body' => $this->body,
+            'views' => $this->views,
             'category' => $this->category->name,
         ];
     }
@@ -24,10 +25,10 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function shouldBeSearchable()
-    {
-        return $this->published;
-    }
+    // public function shouldBeSearchable()
+    // {
+    //     return $this->published;
+    // }
 
     // public function getScoutKey()
     // {

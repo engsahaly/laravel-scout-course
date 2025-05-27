@@ -26,7 +26,8 @@ class SearchController extends Controller
             // $results = Post::search($query)->within('articles_and_posts_aggregator')->paginate(5);
             // $results = PostAndArticleModel::search($query)->paginate(5);
             
-            $results = Post::search($query)->paginate(5);
+            $results = Post::search($query)->orderBy('views', 'asc')->paginate(5);
+
             // $paginator = Post::search($query)->paginateRaw(5);
             // $results = collect($paginator->items()['hits']);
 
