@@ -12,7 +12,7 @@ class Post extends Model
     public function toSearchableArray()
     {
         return [
-            // 'id' => $this->id,
+            'id' => (string) $this->id,
             'title' => $this->title,
             'body' => $this->body,
             'views' => $this->views,

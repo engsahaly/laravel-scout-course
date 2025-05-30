@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Post;
+
 return [
 
     /*
@@ -181,28 +183,37 @@ return [
         ],
         // 'max_total_results' => env('TYPESENSE_MAX_TOTAL_RESULTS', 1000),
         'model-settings' => [
-            // User::class => [
-            //     'collection-schema' => [
-            //         'fields' => [
-            //             [
-            //                 'name' => 'id',
-            //                 'type' => 'string',
-            //             ],
-            //             [
-            //                 'name' => 'name',
-            //                 'type' => 'string',
-            //             ],
-            //             [
-            //                 'name' => 'created_at',
-            //                 'type' => 'int64',
-            //             ],
-            //         ],
-            //         'default_sorting_field' => 'created_at',
-            //     ],
-            //     'search-parameters' => [
-            //         'query_by' => 'name'
-            //     ],
-            // ],
+            Post::class => [
+                'collection-schema' => [
+                    'fields' => [
+                        [
+                            'name' => '.*',
+                            'type' => 'auto',
+                        ],
+                        // [
+                        //     'name' => 'title',
+                        //     'type' => 'string',
+                        // ],
+                        // [
+                        //     'name' => 'body',
+                        //     'type' => 'string',
+                        // ],
+                        // [
+                        //     'name' => 'views',
+                        //     'type' => 'int32',
+                        //     'sort' => true,
+                        // ],
+                        // [
+                        //     'name' => 'category',
+                        //     'type' => 'string',
+                        // ],
+                    ],
+                    // 'default_sorting_field' => 'created_at',
+                ],
+                'search-parameters' => [
+                    'query_by' => 'title'
+                ],
+            ],
         ],
     ],
 
