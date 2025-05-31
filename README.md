@@ -1,6 +1,6 @@
 ## Laravel Scout Course Files on Udemy
 
-<img src="https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2.jpg"> 
+<img src="https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2212.jpg"> 
 
 **Created By :** Mahmoud Anwar
 **Email :** Engsahaly@gmail.com
