@@ -1,11 +1,11 @@
-## Laravel Scout Course Files on Udemy
+## Laravel Scout Search with Algolia, Meilisearch & Typesense Course Files on Udemy
 
 <img src="https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2212.jpg"> 
 
 **Created By :** Mahmoud Anwar
 **Email :** Engsahaly@gmail.com
 
-This is the main readme file for the code used in Laravel Scout course on Udemy
+This is the main readme file for the code used in Laravel Scout Search with Algolia, Meilisearch & Typesense course on Udemy
 
 ## Installation
 
