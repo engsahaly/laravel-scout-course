@@ -1,6 +1,6 @@
 ## Laravel Scout Search with Algolia, Meilisearch & Typesense Course Files on Udemy
 
-<img src="https://img-c.udemycdn.com/course/750x422/6546331_0e2b_2212.jpg"> 
+<img src="https://img-c.udemycdn.com/course/750x422/6645511_5ade.jpg"> 
 
 **Created By :** Mahmoud Anwar
 **Email :** Engsahaly@gmail.com
